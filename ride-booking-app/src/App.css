@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app.light {
+  background-color: #f0f2f5;
+  color: #111;
+}
+
+.app.dark {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+}
+
+.screen {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.app.dark .screen {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.center {
+  justify-content: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 50px;
+  right: 46%;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 10px;
+}
+
+.toggle-checkbox{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
